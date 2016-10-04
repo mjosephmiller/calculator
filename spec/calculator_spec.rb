@@ -17,9 +17,27 @@ describe Calculator do
   end
 
   describe "#subtract" do
+
     it 'should subtract one number from another' do
       expect(calc.subtract(2, 10)).to eq(-8)
     end
+
+  end
+
+  describe '#division' do
+
+    it 'should divide one number by another' do
+      expect(calc.divide(3, 1)).to eq(3)
+    end
+
+  end
+
+  describe '#multiplication' do
+
+    it 'should multiply one number by another' do
+      expect(calc.multiply(4, 2)).to eq(8)
+    end
+    
   end
 
   describe '#factorial' do
