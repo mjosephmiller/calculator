@@ -1,5 +1,10 @@
-class Calculator
+require 'rubygems'
+require 'bundler/setup'
+require 'hello'
 
+class Calculator
+  include Hello
+  
   def add(a, b)
     a+b
   end

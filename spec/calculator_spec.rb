@@ -4,6 +4,14 @@ describe Calculator do
 
   subject(:calc){described_class.new}
 
+  describe "#hello" do
+
+    it 'should return Hello world!' do
+      expect(calc.say_hello).to eq("Hello world!")
+    end
+
+  end
+
   describe "#add" do
 
     it 'should return the sum of two numbers' do
@@ -37,7 +45,7 @@ describe Calculator do
     it 'should multiply one number by another' do
       expect(calc.multiply(4, 2)).to eq(8)
     end
-    
+
   end
 
   describe '#factorial' do
